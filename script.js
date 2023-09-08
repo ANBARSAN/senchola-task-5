@@ -1,6 +1,4 @@
-// ************************************************
-// Shopping Cart API
-// ************************************************
+
 
 var shoppingCart = (function() {
   cart = [];
@@ -65,7 +63,7 @@ var shoppingCart = (function() {
     saveCart();
   }
 
-  // Remove all items from cart
+  
   obj.removeItemFromCartAll = function(name) {
     for(var item in cart) {
       if(cart[item].name === name) {
@@ -116,24 +114,12 @@ var shoppingCart = (function() {
     return cartCopy;
   }
 
-  // cart : Array
-  // Item : Object/Class
-  // addItemToCart : Function
-  // removeItemFromCart : Function
-  // removeItemFromCartAll : Function
-  // clearCart : Function
-  // countCart : Function
-  // totalCart : Function
-  // listCart : Function
-  // saveCart : Function
-  // loadCart : Function
+  
   return obj;
 })();
 
 
-// *****************************************
-// Triggers / Events
-// ***************************************** 
+
 // Add item
 $('.add-to-cart').click(function(event) {
   event.preventDefault();
